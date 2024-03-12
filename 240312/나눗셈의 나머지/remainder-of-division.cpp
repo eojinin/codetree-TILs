@@ -7,7 +7,7 @@ int main() {
 	int rem = 0;
 	int arr[10] = {};
 
-	while (a >= 1) {
+	while (a > 1) {
 		rem = a % b;
 		a /= b;
 		arr[rem]++;
