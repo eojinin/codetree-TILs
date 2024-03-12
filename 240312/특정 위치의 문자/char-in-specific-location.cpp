@@ -9,6 +9,8 @@ int main() {
 	for (int i = 0; i < 6; i++) {
 		if (word[i] == c)
 			cout << i;
+        else
+            cout << "None";
 	}
 	return 0;
 }
