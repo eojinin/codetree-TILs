@@ -20,7 +20,7 @@ int main() {
 		}
 		else if (q_type == 2) {
 			int a, inx = -1;
-			for (int j = 0; j < n; i++) { //2
+			for (int j = 0; j < n; j++) { //2
 				if (arr[j] == a) {
 					inx = j;
 					break;
