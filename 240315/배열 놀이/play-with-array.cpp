@@ -19,15 +19,17 @@ int main() {
 			cout << arr[a - 1] << endl; //1
 		}
 		else if (q_type == 2) {
-			int a, idx = -1;
-			cin >> a;
+			int a, cnt = 0;
 			for (int i = 1; i <= n; i++) { //2
 				if (arr[i - 1] == a) {
-					idx=i-1;
+					cnt++;
+                    cout << i << endl;
 					break;
 				}
 			}
-			cout<<idx+1<<endl;
+			if (cnt == 0) {
+				cout << "0" << endl;
+			}
 		}
 		else if (q_type == 3) {
 			int a, b;
@@ -35,6 +37,7 @@ int main() {
 			for (int i = a; i <= b; i++) {
 				cout << arr[i - 1] << " ";
 			}
+            cout << endl;
 		}
 	}
         return 0;
